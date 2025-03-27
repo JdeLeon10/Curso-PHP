@@ -28,7 +28,7 @@
 <style>
 
     :root{
-        color-scheme: light dark;
+        color-scheme: black;
     }
 
     body{
