@@ -96,6 +96,8 @@
     // Añadir un elemento push
     array_push($arreglo, "Nuevo elemento");
     array_push($arreglo, "Nuevo elemento2");
+    // Añadir sin indice ni metodo push, podria ponerse un indice en especifico
+    $arreglo[] = "Elemento añadido"; // Modificacion
     // Eliminar un elemento
     unset($arreglo[4]);
     // Imprimir todo el arreglo
@@ -107,7 +109,11 @@
     }
 
     // Creacion de diccionarios // objetos // Clave - Valor
-    $diccionario = array("nombre" => "Jeremy", "edad" => 22, "isDev" => true, "double" => 6.5);
+    $diccionario = array(
+        "nombre" => "Jeremy",
+        "edad" => 22,
+        "isDev" => true,
+        "double" => 6.5);
     // Imprimir un diccionario
     echo $diccionario["nombre"] . "<br>";
     echo $diccionario["edad"] . "<br>";
@@ -120,4 +126,21 @@
     // Imprimir todo el diccionario
     print_r($diccionario) . "<br>";
 
+    // Creacion de un objeto
+    $objeto = (object)[
+        "nombre" => "Jeremy",
+        "edad" => 22,
+        "isDev" => true,
+        "double" => 6.5];
+    // Imprimir un objeto
+    echo $objeto->nombre . "<br>";
+    echo $objeto->edad . "<br>";
+    echo $objeto->isDev . "<br>";
+    echo $objeto->double . "<br>";
+    // Añadir un elemento
+    $objeto->nuevo = "Nuevo elemento";
+    // Eliminar un elemento
+    unset($objeto->nuevo);
+    // Imprimir todo el objeto
+    print_r($objeto) . "<br>";
 ?>

@@ -15,14 +15,24 @@
     echo gettype($name);
     echo is_numeric($age);
     echo is_bool($isDev);
+
+    #Creacion de constante global
+    define("numeroPi" , 3.1416);
+    #Creacion de constante local
+    const NOMBRE = "Alejandro";
 ?>
 
 <h1>
+
     <?php echo "Mi primera app <br>";?>
     <?= "Mi segunda app <br>"; ?>
     <?= "Mi nombre es: $name y tengo $age años <br>"; ?>
-    <?= "Concatenacion de variables: $ageConcat; <br>" ?>
-    <?= "Concatenacion de variables 2: " .$concat1 . " " . $concat2; ?>
+    <?= "Concatenacion de variables: $ageConcat <br>"; ?>
+    <?= "Concatenacion de variables 2: " . $concat1 . " " . $concat2 . "<br>"; ?>
+    <?= "Escapar comillas: \"$name\" <br>"; ?>
+    <?= numeroPi . "<br>";?>
+    <?= NOMBRE . "<br>";?>
+
 </h1>
 
 <style>
