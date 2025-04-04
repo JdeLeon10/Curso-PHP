@@ -1,0 +1,1 @@
+Esta carpeta implementa mejores en el codgio del proyecto de PHP desde cero, incluyendo funciones y diferentes cambios para tener un codigo mas limpio y legible.
