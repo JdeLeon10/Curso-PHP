@@ -1,6 +1,6 @@
 <?php 
 
-    require_once "sections/const.php"; // Importamos el archivo de constantes
+    require_once "sections/consts.php"; // Importamos el archivo de constantes
     require_once "02_functions.php"; // Importamos el archivo de funciones
 
     $data = get_data(API_URL);
