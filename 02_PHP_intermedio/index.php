@@ -1,6 +1,6 @@
 <?php 
 
-    require_once "sections/consts.php"; // Importamos el archivo de constantes
+    require_once "consts.php"; // Importamos el archivo de constantes
     require_once "02_functions.php"; // Importamos el archivo de funciones
 
     $data = get_data(API_URL);
@@ -8,5 +8,5 @@
 ?>
 
 <?php render_template('head', $data); ?>
-<?php require "sections/main.php"; ?>
-<?php require "sections/styles.php" ?>
+<?php render_template('main', $data); ?>
+<?php render_template('styles'); ?>
